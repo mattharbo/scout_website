@@ -1,24 +1,29 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+/*Component design*/
+/* Website */
+@import url("components/websiteheader.css");
+@import url("components/homepagelayout.css");
+@import url("components/buttons.css");
+@import url("components/titles.css");
+
+/*Fonts & colors*/
+body{
+  font-family: 'Cabin', sans-serif;
+  margin: 0;
+  color: #3c4858;/*#252A34;*/
 }
-
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
+h1, h2, h3{
+  font-family: 'Paytone One', sans-serif;
+  margin-bottom: 0;
 }
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.container-830{
+  max-width: 830px;
+  margin: 0px auto;
+}
+.container-570{
+  max-width: 570px;
+  margin: 0px auto;
 }
