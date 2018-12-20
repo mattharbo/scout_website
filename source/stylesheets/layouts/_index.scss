@@ -1,0 +1,19 @@
+body{
+  font-family: $body_font;
+  margin: 0;
+  color: $dark_blue;
+}
+h1, h2, h3{
+  font-family: $title_font;
+  margin-bottom: 0;
+}
+.container-830{
+  max-width: 830px;
+  margin: 0px auto;
+}
+.container-570{
+  max-width: 570px;
+  margin: 0px auto;
+}
+
+@import "homepage";
