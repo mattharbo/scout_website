@@ -1,0 +1,88 @@
+/* For tests purposes --> To be deleted */
+
+.container-920{
+  max-width: 920px;
+  margin: 0px auto;
+}
+
+.testinglayout{
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	margin-top: 20px;
+	/*background-color: green;*/
+}
+
+.coords{
+	text-align: right;
+	font-weight: bolder;
+}
+
+.soccerfield{
+	position: relative;
+	flex-grow: 0;
+	width:640px;
+	height:460px;
+	border-radius: 5px;
+	background-image: url('./../images/pitch.png');
+	background-repeat: no-repeat;
+	background-position: center top; 
+	background-size: 640px 460px;
+}
+
+.pitch_pointer{
+	position: absolute;
+	width: 18px;
+	height: 24px;
+}
+
+/***************/
+/* Needed */
+/***************/
+
+.players-container{
+	width: 270px;
+	margin-top: 0;
+	/*background-color: red;*/
+	flex-grow: 0;
+}
+
+.players-listing{
+	list-style-type: none;
+	margin: 10px 0;
+	padding-inline-start:0;
+}
+
+.players-listing li{
+	padding: 7px 0 7px 20px;
+	border-radius: 5px;
+	margin-bottom: 4px;
+
+	&:hover{
+		opacity: 0.7;
+		cursor:pointer;
+		background-color: #f7f7f7;
+	}
+}
+
+.player-item{
+	color: $dark_blue;
+}
+
+.new-player{
+	color: $pink;
+
+	&:hover{
+		background-color: #ffe1e8 !important;
+	}
+}
+
+.player-selected{
+	color: white;
+	background-color: $green;
+
+	&:hover{
+		opacity: 0.7;
+		background-color: $green !important;
+	}
+}
