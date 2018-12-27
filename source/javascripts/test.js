@@ -13,7 +13,7 @@ const numberofplayers = listOfAllPlayers.length;
 // Click on the pitch
 // ####################
 
-const pitch = document.querySelector(".soccerfield");
+const pitch = document.querySelector(".soccerfield-landscape");
 
 const printPointer = (x,y) => {
 	const abscissa = x-9;
@@ -29,7 +29,7 @@ const printPointerEvent = (event) => {
 	document.querySelector(".coords").innerText =
 		(`x=${event.offsetX} (${Math.round(0.2*(event.offsetX-20))}m) / y=${event.offsetY}`);
 	printPointer(event.offsetX,event.offsetY);
-}
+};
 
 pitch.addEventListener("click", printPointerEvent);
 
