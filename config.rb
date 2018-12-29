@@ -46,8 +46,9 @@ page '/*.txt', layout: false
 # end
 
 configure :build do
+  set :http_prefix, "/scout_website"
   activate :minify_css
-  activate :minify_javascript
+  # activate :minify_javascript
 end
 
 activate :deploy do |deploy|
