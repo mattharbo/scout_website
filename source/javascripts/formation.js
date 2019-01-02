@@ -18,14 +18,12 @@ formations.forEach((formation) => {
 		const endspacerowtemplate = "<div class='space'></div></div>";
 		//Empty the field
 		pitch.innerHTML = "";
-		//Display Goalkeeper
-		pitch.insertAdjacentHTML("beforeend",
-				beginrowtemplate+playertemplate+endspacerowtemplate);
 		//Loop to retrive number of players on each rows
-		for (var i = 0; i < teamlines; i++) {
+		for (var i = teamlines-1; i > -1; i--) {
 			//Create a line for each 
 			pitch.insertAdjacentHTML("beforeend",
 				beginrowtemplate);
+
 			// console.log(formation.dataset.form[i]);
 			const lastrow = document.querySelectorAll(".row");
 			for (var j = 0; j < formation.dataset.form[i]; j++) {
@@ -35,5 +33,8 @@ formations.forEach((formation) => {
 			lastrow[lastrow.length-1].insertAdjacentHTML("beforeend",
 				endspacerowtemplate);	
 		}
+		//Display Goalkeeper
+		pitch.insertAdjacentHTML("beforeend",
+				beginrowtemplate+playertemplate+endspacerowtemplate);
 	});
 });
